@@ -52,7 +52,7 @@ withDefaults(
                 >
                     <h1 class="mb-1 font-medium">Let's get started</h1>
                     <p class="mb-2 text-[#706f6c] dark:text-[#A1A09A]">
-                        Laravel has an incredibly rich ecosystem. <br />We
+                        Ugarit has an incredibly rich ecosystem. <br />We
                         suggest starting with the following.
                     </p>
                     <ul class="mb-4 flex flex-col lg:mb-6">
@@ -73,7 +73,7 @@ withDefaults(
                             <span>
                                 Read the
                                 <a
-                                    href="https://laravel.com/docs"
+                                    href="https://ugarit.com/docs"
                                     target="_blank"
                                     class="ml-1 inline-flex items-center space-x-1 font-medium text-[#f53003] underline underline-offset-4 dark:text-[#FF4433]"
                                 >
@@ -138,7 +138,7 @@ withDefaults(
                     <ul class="flex gap-3 text-sm leading-normal">
                         <li>
                             <a
-                                href="https://cloud.laravel.com"
+                                href="https://cloud.ugarit.com"
                                 target="_blank"
                                 class="inline-block rounded-sm border border-black bg-[#1b1b18] px-5 py-1.5 text-sm leading-normal text-white hover:border-black hover:bg-black dark:border-[#eeeeec] dark:bg-[#eeeeec] dark:text-[#1C1C1A] dark:hover:border-white dark:hover:bg-white"
                             >
@@ -150,7 +150,7 @@ withDefaults(
                 <div
                     class="relative -mb-px aspect-[335/364] w-full shrink-0 overflow-hidden rounded-t-lg bg-[#fff2f2] lg:mb-0 lg:-ml-px lg:aspect-auto lg:w-[438px] lg:rounded-t-none lg:rounded-r-lg dark:bg-[#1D0002]"
                 >
-                    <!-- Laravel Logo -->
+                    <!-- Ugarit Logo -->
                     <svg
                         class="w-full max-w-none translate-y-0 text-[#F53003] opacity-100 transition-all duration-750 dark:text-[#F61500] starting:opacity-0 motion-safe:starting:translate-y-6"
                         viewBox="0 0 438 104"

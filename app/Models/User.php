@@ -2,14 +2,14 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
+// use Heritage\Contracts\Auth\MustVerifyEmail;
 use Database\Factories\UserFactory;
-use Illuminate\Database\Eloquent\Attributes\Fillable;
-use Illuminate\Database\Eloquent\Attributes\Hidden;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Support\Carbon;
+use Heritage\Database\Eloquent\Attributes\Fillable;
+use Heritage\Database\Eloquent\Attributes\Hidden;
+use Heritage\Database\Eloquent\Factories\HasFactory;
+use Heritage\Foundation\Auth\User as Authenticatable;
+use Heritage\Notifications\Notifiable;
+use Heritage\Support\Carbon;
 
 /**
  * @property int $id

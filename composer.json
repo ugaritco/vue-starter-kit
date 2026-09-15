@@ -14,7 +14,7 @@
         "ugarit/tinker": "^1.00.00",
         "ugarit/wayfinder": "^1.00.00",
         "ugarit/workos": "^1.00.00",
-        "inertiajs/inertia-laravel": "^3.0"
+        "ugarit/inertia": "^1.00.00"
     },
     "require-dev": {
         "fakerphp/faker": "^1.24",

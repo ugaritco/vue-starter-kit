@@ -28,6 +28,7 @@ export default defineConfig({
             },
         }),
         wayfinder({
+            command: 'php scribe wayfinder:generate',
             formVariants: true,
         }),
     ]),

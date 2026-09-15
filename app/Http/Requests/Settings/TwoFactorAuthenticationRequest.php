@@ -2,9 +2,9 @@
 
 namespace App\Http\Requests\Settings;
 
-use Illuminate\Contracts\Validation\ValidationRule;
-use Illuminate\Foundation\Http\FormRequest;
-use Laravel\Fortify\InteractsWithTwoFactorState;
+use Heritage\Contracts\Validation\ValidationRule;
+use Heritage\Foundation\Http\FormRequest;
+use Ugarit\Fortify\InteractsWithTwoFactorState;
 
 class TwoFactorAuthenticationRequest extends FormRequest
 {

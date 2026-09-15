@@ -3,8 +3,8 @@
 namespace App\Http\Requests\Teams;
 
 use App\Rules\TeamName;
-use Illuminate\Contracts\Validation\ValidationRule;
-use Illuminate\Foundation\Http\FormRequest;
+use Heritage\Contracts\Validation\ValidationRule;
+use Heritage\Foundation\Http\FormRequest;
 
 class SaveTeamRequest extends FormRequest
 {

@@ -5,7 +5,7 @@ namespace Tests\Feature\Teams;
 use App\Enums\TeamRole;
 use App\Models\Team;
 use App\Models\User;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Heritage\Foundation\Testing\RefreshDatabase;
 use Inertia\Testing\AssertableInertia as Assert;
 use Tests\TestCase;
 

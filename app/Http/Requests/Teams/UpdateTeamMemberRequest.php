@@ -3,9 +3,9 @@
 namespace App\Http\Requests\Teams;
 
 use App\Enums\TeamRole;
-use Illuminate\Contracts\Validation\ValidationRule;
-use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rule;
+use Heritage\Contracts\Validation\ValidationRule;
+use Heritage\Foundation\Http\FormRequest;
+use Heritage\Validation\Rule;
 
 class UpdateTeamMemberRequest extends FormRequest
 {

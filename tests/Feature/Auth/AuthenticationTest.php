@@ -6,13 +6,13 @@ use App\Enums\TeamRole;
 use App\Models\Team;
 use App\Models\TeamInvitation;
 use App\Models\User;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\RateLimiter;
+use Heritage\Foundation\Testing\RefreshDatabase;
+use Heritage\Http\Request;
+use Heritage\Support\Facades\RateLimiter;
 use Inertia\Testing\AssertableInertia as Assert;
-use Laravel\Fortify\Features;
+use Ugarit\Fortify\Features;
 /* @chisel-passkeys */
-use Laravel\Passkeys\Contracts\PasskeyLoginResponse;
+use Ugarit\Passkeys\Contracts\PasskeyLoginResponse;
 /* @end-chisel-passkeys */
 use Tests\TestCase;
 
@@ -30,7 +30,7 @@ class AuthenticationTest extends TestCase
     public function test_login_screen_includes_team_invitation_context()
     {
         $owner = User::factory()->create();
-        $team = Team::factory()->create(['name' => 'Laravel Team']);
+        $team = Team::factory()->create(['name' => 'Ugarit Team']);
         $team->members()->attach($owner, ['role' => TeamRole::Owner->value]);
 
         $invitation = TeamInvitation::factory()->create([
@@ -45,7 +45,7 @@ class AuthenticationTest extends TestCase
         $response->assertInertia(fn (Assert $page) => $page
             ->component('auth/Login')
             ->where('teamInvitation.code', $invitation->code)
-            ->where('teamInvitation.teamName', 'Laravel Team'),
+            ->where('teamInvitation.teamName', 'Ugarit Team'),
         );
     }
 
@@ -70,7 +70,7 @@ class AuthenticationTest extends TestCase
         $request = Request::create(route('login', absolute: false), 'GET', server: [
             'HTTP_ACCEPT' => 'application/json',
         ]);
-        $request->setLaravelSession($this->app['session.store']);
+        $request->setUgaritSession($this->app['session.store']);
         $request->setUserResolver(fn () => $user);
 
         $jsonResponse = app(PasskeyLoginResponse::class)->toResponse($request);

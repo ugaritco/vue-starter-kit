@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\TeamInvitation;
-use Illuminate\Http\Request;
+use Heritage\Http\Request;
 use Inertia\Inertia;
 use Inertia\Response;
 

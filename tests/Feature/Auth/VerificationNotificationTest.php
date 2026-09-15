@@ -3,9 +3,9 @@
 namespace Tests\Feature\Auth;
 
 use App\Models\User;
-use Illuminate\Auth\Notifications\VerifyEmail;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Support\Facades\Notification;
+use Heritage\Auth\Notifications\VerifyEmail;
+use Heritage\Foundation\Testing\RefreshDatabase;
+use Heritage\Support\Facades\Notification;
 use Tests\TestCase;
 
 class VerificationNotificationTest extends TestCase

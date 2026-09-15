@@ -10,7 +10,7 @@ import { store } from '@/routes/password/confirm';
 import {
     index as confirmOptions,
     store as confirmStore,
-} from '@/actions/Laravel/Passkeys/Http/Controllers/PasskeyConfirmationController';
+} from '@/actions/Ugarit/Passkeys/Http/Controllers/PasskeyConfirmationController';
 import PasskeyVerify from '@/components/PasskeyVerify.vue';
 /* @end-chisel-passkeys */
 

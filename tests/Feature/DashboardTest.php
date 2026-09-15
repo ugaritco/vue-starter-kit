@@ -6,7 +6,7 @@ use App\Enums\TeamRole;
 use App\Models\Team;
 use App\Models\TeamInvitation;
 use App\Models\User;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Heritage\Foundation\Testing\RefreshDatabase;
 use Inertia\Testing\AssertableInertia as Assert;
 use Tests\TestCase;
 
@@ -39,7 +39,7 @@ class DashboardTest extends TestCase
     {
         $owner = User::factory()->create(['name' => 'Taylor Otwell']);
         $invitedUser = User::factory()->create(['email' => 'invited@example.com']);
-        $team = Team::factory()->create(['name' => 'Laravel Team']);
+        $team = Team::factory()->create(['name' => 'Ugarit Team']);
 
         $team->members()->attach($owner, ['role' => TeamRole::Owner->value]);
 
@@ -59,7 +59,7 @@ class DashboardTest extends TestCase
             ->has('pendingInvitations', 1)
             ->where('pendingInvitations.0.code', $invitation->code)
             ->where('pendingInvitations.0.inviterName', 'Taylor Otwell')
-            ->where('pendingInvitations.0.team.name', 'Laravel Team')
+            ->where('pendingInvitations.0.team.name', 'Ugarit Team')
             ->where('pendingInvitations.0.team.slug', $team->slug)
             ->missing('pendingInvitations.0.teamName'),
         );

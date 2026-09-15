@@ -3,7 +3,7 @@
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Teams\TeamInvitationController;
 use App\Http\Middleware\EnsureTeamMembership;
-use Illuminate\Support\Facades\Route;
+use Heritage\Support\Facades\Route;
 
 Route::inertia('/', 'Welcome')->name('home');
 

@@ -7,8 +7,8 @@ use App\Models\Team;
 use App\Models\TeamInvitation;
 use App\Models\User;
 use App\Notifications\Teams\TeamInvitation as TeamInvitationNotification;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Support\Facades\Notification;
+use Heritage\Foundation\Testing\RefreshDatabase;
+use Heritage\Support\Facades\Notification;
 use Tests\TestCase;
 
 class TeamInvitationTest extends TestCase

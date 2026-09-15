@@ -6,7 +6,7 @@ use App\Enums\TeamRole;
 use App\Models\Team;
 use App\Models\TeamInvitation;
 use App\Models\User;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Heritage\Foundation\Testing\RefreshDatabase;
 use Inertia\Testing\AssertableInertia as Assert;
 use Tests\TestCase;
 
@@ -24,7 +24,7 @@ class RegistrationTest extends TestCase
     public function test_registration_screen_includes_team_invitation_context()
     {
         $owner = User::factory()->create();
-        $team = Team::factory()->create(['name' => 'Laravel Team']);
+        $team = Team::factory()->create(['name' => 'Ugarit Team']);
         $team->members()->attach($owner, ['role' => TeamRole::Owner->value]);
 
         $invitation = TeamInvitation::factory()->create([
@@ -39,7 +39,7 @@ class RegistrationTest extends TestCase
         $response->assertInertia(fn (Assert $page) => $page
             ->component('auth/Register')
             ->where('teamInvitation.code', $invitation->code)
-            ->where('teamInvitation.teamName', 'Laravel Team'),
+            ->where('teamInvitation.teamName', 'Ugarit Team'),
         );
     }
 

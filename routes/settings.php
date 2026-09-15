@@ -7,9 +7,9 @@ use App\Http\Controllers\Teams\TeamInvitationController;
 use App\Http\Controllers\Teams\TeamMemberController;
 use App\Http\Middleware\EnsureTeamMembership;
 /* @chisel-password-confirmation */
-use Illuminate\Auth\Middleware\RequirePassword;
+use Heritage\Auth\Middleware\RequirePassword;
 /* @end-chisel-password-confirmation */
-use Illuminate\Support\Facades\Route;
+use Heritage\Support\Facades\Route;
 
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', '/settings/profile');

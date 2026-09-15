@@ -1,13 +1,13 @@
 <?php
 
-require getenv('LARAVEL_INSTALLER_AUTOLOADER') ?: __DIR__.'/vendor/autoload.php';
+require getenv('UGARIT_INSTALLER_AUTOLOADER') ?: __DIR__.'/vendor/autoload.php';
 
-use Laravel\Chisel\Chisel;
-use Laravel\Chisel\Question;
-use Laravel\Prompts\Support\Logger;
+use Ugarit\Chisel\Chisel;
+use Ugarit\Chisel\Question;
+use Ugarit\Prompts\Support\Logger;
 use Symfony\Component\Process\Process;
 
-use function Laravel\Prompts\task;
+use function Ugarit\Prompts\task;
 
 function chiselRun(array $command, string $label): void
 {
@@ -42,9 +42,9 @@ function chiselRun(array $command, string $label): void
 function chiselSkipsNode(): bool
 {
     return filter_var(
-        $_ENV['LARAVEL_INSTALLER_NO_NODE']
-            ?? $_SERVER['LARAVEL_INSTALLER_NO_NODE']
-            ?? getenv('LARAVEL_INSTALLER_NO_NODE'),
+        $_ENV['UGARIT_INSTALLER_NO_NODE']
+            ?? $_SERVER['UGARIT_INSTALLER_NO_NODE']
+            ?? getenv('UGARIT_INSTALLER_NO_NODE'),
         FILTER_VALIDATE_BOOL,
     );
 }
@@ -140,7 +140,7 @@ return Chisel::script(__DIR__)
         },
         else: function (Chisel $c) use ($paths) {
             $c->php('app/Models/User.php')
-                ->removeImport('Illuminate\Contracts\Auth\MustVerifyEmail')
+                ->removeImport('Heritage\Contracts\Auth\MustVerifyEmail')
                 ->removeInterface('MustVerifyEmail');
 
             $c->files(
@@ -173,7 +173,7 @@ return Chisel::script(__DIR__)
         },
         else: function (Chisel $c) use ($paths) {
             $c->php('app/Models/User.php')
-                ->removeImport('Laravel\Fortify\TwoFactorAuthenticatable')
+                ->removeImport('Ugarit\Fortify\TwoFactorAuthenticatable')
                 ->removeTrait('TwoFactorAuthenticatable');
 
             $c->files(
@@ -217,8 +217,8 @@ return Chisel::script(__DIR__)
         },
         else: function (Chisel $c) use ($paths) {
             $c->php('app/Models/User.php')
-                ->removeImport('Laravel\Fortify\PasskeyAuthenticatable')
-                ->removeImport('Laravel\Fortify\Contracts\PasskeyUser')
+                ->removeImport('Ugarit\Fortify\PasskeyAuthenticatable')
+                ->removeImport('Ugarit\Fortify\Contracts\PasskeyUser')
                 ->removeTrait('PasskeyAuthenticatable')
                 ->removeInterface('PasskeyUser');
 
@@ -235,7 +235,7 @@ return Chisel::script(__DIR__)
                 $paths['confirm_password'],
             )->removeSection('passkeys');
 
-            chiselRemoveNpmPackages($c, '@laravel/passkeys');
+            chiselRemoveNpmPackages($c, '@ugarit/passkeys');
 
             $c->files(...[
                 ...$paths['passkey_files'],
@@ -284,10 +284,10 @@ return Chisel::script(__DIR__)
     )
     ->apply(function (Chisel $c): void {
         $c->file('composer.json')
-            ->removeLinesContaining('"@php artisan install:features --ansi"');
+            ->removeLinesContaining('"@php scribe install:features --ansi"');
 
         chiselRun(['composer', 'lint'], 'Composer Lint');
-        chiselRun(['php', 'artisan', 'wayfinder:generate', '--with-form', '--no-interaction'], 'Generate Wayfinder Resources');
+        chiselRun(['php', 'scribe', 'wayfinder:generate', '--with-form', '--no-interaction'], 'Generate Wayfinder Resources');
 
         if (! chiselSkipsNode()) {
             $c->npm()->run('check:fix');

@@ -7,8 +7,8 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Teams\UpdateTeamMemberRequest;
 use App\Models\Team;
 use App\Models\User;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Support\Facades\Gate;
+use Heritage\Http\RedirectResponse;
+use Heritage\Support\Facades\Gate;
 use Inertia\Inertia;
 
 class TeamMemberController extends Controller

@@ -3,8 +3,8 @@
 namespace App\Http\Requests\Settings;
 
 use App\Concerns\PasswordValidationRules;
-use Illuminate\Contracts\Validation\ValidationRule;
-use Illuminate\Foundation\Http\FormRequest;
+use Heritage\Contracts\Validation\ValidationRule;
+use Heritage\Foundation\Http\FormRequest;
 
 class PasswordUpdateRequest extends FormRequest
 {

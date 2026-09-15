@@ -5,8 +5,8 @@ namespace App\Rules;
 use App\Models\TeamInvitation;
 use App\Models\User;
 use Closure;
-use Illuminate\Contracts\Validation\ValidationRule;
-use Illuminate\Translation\PotentiallyTranslatedString;
+use Heritage\Contracts\Validation\ValidationRule;
+use Heritage\Translation\PotentiallyTranslatedString;
 
 class ValidTeamInvitation implements ValidationRule
 {

@@ -5,8 +5,8 @@ use App\Http\Controllers\Teams\TeamController;
 use App\Http\Controllers\Teams\TeamInvitationController;
 use App\Http\Controllers\Teams\TeamMemberController;
 use App\Http\Middleware\EnsureTeamMembership;
-use Illuminate\Support\Facades\Route;
-use Laravel\WorkOS\Http\Middleware\ValidateSessionWithWorkOS;
+use Heritage\Support\Facades\Route;
+use Ugarit\WorkOS\Http\Middleware\ValidateSessionWithWorkOS;
 
 Route::middleware([
     'auth',

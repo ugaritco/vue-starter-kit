@@ -4,10 +4,10 @@ namespace App\Http\Requests\Teams;
 
 use App\Models\Team;
 use Closure;
-use Illuminate\Contracts\Validation\ValidationRule;
-use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Support\Facades\Gate;
-use Illuminate\Validation\Validator;
+use Heritage\Contracts\Validation\ValidationRule;
+use Heritage\Foundation\Http\FormRequest;
+use Heritage\Support\Facades\Gate;
+use Heritage\Validation\Validator;
 
 class DeleteTeamRequest extends FormRequest
 {

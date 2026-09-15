@@ -9,10 +9,10 @@ use App\Http\Requests\Teams\RespondToTeamInvitationRequest;
 use App\Models\Team;
 use App\Models\TeamInvitation;
 use App\Notifications\Teams\TeamInvitation as TeamInvitationNotification;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Gate;
-use Illuminate\Support\Facades\Notification;
+use Heritage\Http\RedirectResponse;
+use Heritage\Support\Facades\DB;
+use Heritage\Support\Facades\Gate;
+use Heritage\Support\Facades\Notification;
 use Inertia\Inertia;
 
 class TeamInvitationController extends Controller

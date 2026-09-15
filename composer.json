@@ -10,12 +10,12 @@
     "license": "MIT",
     "require": {
         "php": "^8.3",
-        "inertiajs/inertia-ugarit": "^3.0",
         "ugarit/chisel": "^1.00.00",
         "ugarit/fortify": "^1.00.00",
         "ugarit/framework": "^1.00.00",
         "ugarit/tinker": "^1.00.00",
-        "ugarit/wayfinder": "^1.00.00"
+        "ugarit/wayfinder": "^1.00.00",
+        "inertiajs/inertia-laravel": "^3.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.24",
@@ -127,5 +127,8 @@
             "email": "taylor@laravel.com",
             "role": "Original Creator & Primary Developer"
         }
-    ]
+    ],
+    "replace": {
+        "laravel/framework": "13.32.0"
+    }
 }

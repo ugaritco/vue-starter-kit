@@ -32,12 +32,6 @@ function chiselRun(array $command, string $label, bool $ignoreFailure = false): 
                 return $process;
             }
 
-            if ($ignoreFailure) {
-                $logger->warning(implode(' ', $command).' (completed with warnings/skipped)');
-
-                return $process;
-            }
-
             $logger->error(implode(' ', $command));
             $logger->error('Error output: '.trim($process->getErrorOutput()));
             $logger->error('Chisel: Your project may be in a partially-modified state — review the output above before continuing.');

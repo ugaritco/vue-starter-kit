@@ -18,7 +18,7 @@
     "@vueuse/core": "^12.8.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "ugarit-vite-plugin": "github:ugaritco/vite-plugin#v1.00.00",
+    "ugarit-vite-plugin": "github:ugaritco/vite-plugin#v1.00.01",
     "reka-ui": "^2.9.8",
     "tailwind-merge": "^3.2.0",
     "tailwindcss": "^4.1.1",
@@ -28,7 +28,7 @@
     "vue-sonner": "^2.0.0"
   },
   "devDependencies": {
-    "@ugarit/vite-plugin-wayfinder": "github:ugaritco/vite-plugin-wayfinder#v1.00.00",
+    "@ugarit/vite-plugin-wayfinder": "github:ugaritco/vite-plugin-wayfinder#v1.00.01",
     "@tailwindcss/vite": "^4.1.11",
     "@types/node": "^22.13.5",
     "@vitejs/plugin-vue": "^6.0.0",
@@ -48,5 +48,5 @@
     "lightningcss-linux-x64-gnu": "^1.29.1",
     "lightningcss-win32-x64-msvc": "^1.29.1"
   },
-  "version": "1.00.00"
+  "version": "1.00.05"
 }

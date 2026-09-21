@@ -6,12 +6,13 @@ import { dashboard, login } from '@/routes';
 import { register } from '@/routes';
 /* @end-chisel-registration */
 import { useAppearance } from '@/composables/useAppearance';
-import { Moon, Sun } from '@lucide/vue';
+import KeffiyehCorner from '@/components/KeffiyehCorner.vue';
 
-const { resolvedAppearance, updateAppearance } = useAppearance();
+const { updateAppearance } = useAppearance();
 
 const toggleTheme = () => {
-    updateAppearance(resolvedAppearance.value === 'dark' ? 'light' : 'dark');
+    const isDark = typeof document !== 'undefined' && document.documentElement.classList.contains('dark');
+    updateAppearance(isDark ? 'light' : 'dark');
 };
 
 const copiedCommand = ref(false);
@@ -31,6 +32,9 @@ const copyToClipboard = () => {
         <link rel="preconnect" href="https://rsms.me/" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     </Head>
+
+    <!-- Palestinian Keffiyeh Corner of Solidarity -->
+    <KeffiyehCorner />
 
     <div
         class="flex min-h-screen flex-col items-center justify-between bg-[#FDFDFC] p-6 text-[#1b1b18] lg:justify-center lg:p-8 dark:bg-[#0a0a0a] dark:text-[#EDEDEC]"
@@ -69,10 +73,39 @@ const copyToClipboard = () => {
                     @click="toggleTheme"
                     type="button"
                     class="inline-flex h-[34px] items-center justify-center rounded-sm border border-[#19140035] px-3 text-[#1b1b18] transition hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
-                    :title="resolvedAppearance === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'"
+                    aria-label="Toggle theme"
+                    title="Toggle light and dark theme"
                 >
-                    <Sun v-if="resolvedAppearance === 'dark'" class="h-4 w-4 text-amber-400" />
-                    <Moon v-else class="h-4 w-4 text-neutral-600 dark:text-neutral-300" />
+                    <!-- Sun Icon (Visible in dark mode via CSS) -->
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="hidden h-4 w-4 text-amber-400 dark:block"
+                        aria-hidden="true"
+                    >
+                        <circle cx="12" cy="12" r="4" />
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+                    </svg>
+
+                    <!-- Moon Icon (Visible in light mode via CSS) -->
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="block h-4 w-4 text-neutral-600 dark:hidden"
+                        aria-hidden="true"
+                    >
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                    </svg>
                 </button>
             </nav>
         </header>

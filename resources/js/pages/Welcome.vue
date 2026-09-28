@@ -18,8 +18,8 @@ const toggleTheme = () => {
 const copiedCommand = ref(false);
 const cliCommand = 'php scribe serve';
 
-const copyToClipboard = () => {
-    navigator.clipboard.writeText(cliCommand);
+const copyToClipboard = async () => {
+    await navigator.clipboard.writeText(cliCommand);
     copiedCommand.value = true;
     setTimeout(() => {
         copiedCommand.value = false;

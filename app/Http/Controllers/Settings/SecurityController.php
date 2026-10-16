@@ -53,7 +53,7 @@ class SecurityController extends Controller
         }
         /* @end-chisel-2fa */
 
-        return Inertia::render('settings/Security', $props);
+        return Inertia::render('panel/settings/Security', $props);
     }
 
     /**

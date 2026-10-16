@@ -35,7 +35,7 @@ class SecurityTest extends TestCase
             /* @end-chisel-password-confirmation */
             ->get(route('security.edit'))
             ->assertInertia(fn (Assert $page) => $page
-                ->component('settings/Security')
+                ->component('panel/settings/Security')
                 /* @chisel-passkeys */
                 ->where('canManagePasskeys', true)
                 ->where('passkeys', [])
@@ -79,7 +79,7 @@ class SecurityTest extends TestCase
             ->get(route('security.edit'))
             ->assertOk()
             ->assertInertia(fn (Assert $page) => $page
-                ->component('settings/Security')
+                ->component('panel/settings/Security')
                 /* @chisel-passkeys */
                 ->where('canManagePasskeys', false)
                 ->where('passkeys', [])

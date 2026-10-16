@@ -1,14 +1,14 @@
 <?php
 
 return [
-    'login' => 'resources/js/pages/auth/Login.vue',
-    'register' => 'resources/js/pages/auth/Register.vue',
-    'welcome' => 'resources/js/pages/Welcome.vue',
-    'profile' => 'resources/js/pages/settings/Profile.vue',
-    'security' => 'resources/js/pages/settings/Security.vue',
-    'verify_email' => 'resources/js/pages/auth/VerifyEmail.vue',
-    'two_factor_challenge' => 'resources/js/pages/auth/TwoFactorChallenge.vue',
-    'confirm_password' => 'resources/js/pages/auth/ConfirmPassword.vue',
+    'login' => 'resources/js/apps/auth/pages/Login.vue',
+    'register' => 'resources/js/apps/auth/pages/Register.vue',
+    'welcome' => 'resources/js/apps/web/pages/Welcome.vue',
+    'profile' => 'resources/js/apps/panel/pages/settings/Profile.vue',
+    'security' => 'resources/js/apps/panel/pages/settings/Security.vue',
+    'verify_email' => 'resources/js/apps/auth/pages/VerifyEmail.vue',
+    'two_factor_challenge' => 'resources/js/apps/auth/pages/TwoFactorChallenge.vue',
+    'confirm_password' => 'resources/js/apps/auth/pages/ConfirmPassword.vue',
     'auth_types' => 'resources/js/types/auth.ts',
 
     'two_factor_files' => [

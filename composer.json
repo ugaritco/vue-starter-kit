@@ -12,7 +12,7 @@
         "php": "^8.3",
         "ugarit/chisel": "^1.00.00",
         "ugarit/fortify": "^1.00.00",
-        "ugarit/framework": "^1.00.13",
+        "ugarit/framework": "^1.04.00",
         "ugarit/tinker": "^1.00.00",
         "ugarit/wayfinder": "^1.00.00",
         "ugarit/inertia": "^1.00.03"

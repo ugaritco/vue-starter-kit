@@ -3,17 +3,17 @@
  * Typeface family tokens used across the design system.
  *
  * Rules:
+ *   - Primary font stack uses 'IBM Plex Sans Arabic' paired with 'IBM Plex Sans'.
+ *   - Monospace stack uses 'IBM Plex Mono' for code and technical content.
+ *   - Editorial stack uses 'IBM Plex Serif'.
  *   - Always include a generic fallback category (sans-serif, monospace, serif).
- *   - UI system fonts are listed as secondary fallbacks for performance.
- *   - Monospace stack is used for code, kbd, and technical content.
- *
- * Loading: Cairo is served via Google Fonts (weights 100–900).
  * ─────────────────────────────────────────────────────────────────────────────
  */
 :root {
-    /* ── Primary ── main UI and body typeface (Arabic + Latin support) */
+    /* ── Primary ── main UI and body typeface (IBM Plex Arabic + Latin) */
     --font-family-primary:
-        'Cairo',
+        'IBM Plex Sans Arabic',
+        'IBM Plex Sans',
         ui-sans-serif,
         system-ui,
         -apple-system,
@@ -23,6 +23,7 @@
 
     /* ── Mono ── code blocks, kbd shortcuts, technical content */
     --font-family-mono:
+        'IBM Plex Mono',
         ui-monospace,
         'Cascadia Code',
         'Fira Code',
@@ -33,6 +34,7 @@
 
     /* ── Serif ── editorial / long-form reading contexts */
     --font-family-serif:
+        'IBM Plex Serif',
         ui-serif,
         Georgia,
         'Times New Roman',

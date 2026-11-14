@@ -16,11 +16,15 @@
  * ─────────────────────────────────────────────────────────────────────────────
  */
 :root {
-    /* ── Full ── pure white, page canvas, card and modal backgrounds */
-    --color-paper:         hsl(0 0% 100%);
+    /* ── Full ── pure white, card and container backgrounds (#FFFFFF) */
+    --color-paper:         #FFFFFF;
+    --color-white:         #FFFFFF;
+
+    /* ── Mist ── canvas background (#F5F5F5) */
+    --color-mist:          #F5F5F5;
 
     /* ── Faint (10%) ── frosted glass hint on dark surfaces */
-    --color-paper-faint:   hsl(0 0% 100% / 0.1);
+    --color-paper-faint:   rgba(255, 255, 255, 0.10);
 
     /* ── Subtle (15%) ── glass panel edge highlight */
     --color-paper-subtle:  hsl(0 0% 100% / 0.15);

@@ -29,10 +29,20 @@
     --text-overline: var(--font-size-overline);
     --text-hairline: var(--font-size-hairline);
 
-    /* ── Fluid Border Radii ── */
-    --radius-lg: var(--radius-rounded);
-    --radius-md: var(--radius-soft);
+    /* ── Border radii ──
+     * Every numeric step is a degree of --radius, so the whole lab
+     * follows that one length. rounded-full stays a capsule.
+     */
+    --radius: var(--radius-soft);
+    --radius-xs: var(--radius-hairline);
     --radius-sm: var(--radius-subtle);
+    --radius-md: var(--radius-soft);
+    --radius-lg: var(--radius-rounded);
+    --radius-xl: var(--radius-card);
+    --radius-2xl: var(--radius-panel);
+    --radius-3xl: var(--radius-sheet);
+    --radius-4xl: var(--radius-feature);
+    --radius-full: var(--radius-pill);
     --radius-sharp: var(--radius-sharp);
     --radius-hairline: var(--radius-hairline);
     --radius-subtle: var(--radius-subtle);
@@ -54,7 +64,47 @@
     --spacing-element-inset-default: var(--space-element-inset-default);
     --spacing-element-inset-comfortable: var(--space-element-inset-comfortable);
     --spacing-component-group: var(--space-component-group);
-    --spacing-section-gap: var(--space-section-gap);
-    --spacing-layout-gap: var(--space-layout-gap);
-    --spacing-page-gap: var(--space-page-gap);
+    --spacing-component-padding: var(--space-component-padding);
+    --spacing-component-gap: var(--space-component-gap);
+    --spacing-layout-panel: var(--space-layout-panel);
+    --spacing-layout-section: var(--space-layout-section);
+    --spacing-layout-region: var(--space-layout-region);
+    --spacing-layout-band: var(--space-layout-band);
+    --spacing-layout-hero: var(--space-layout-hero);
+
+    /* ── Breakpoints (px values match primitives/breakpoint.css) ── */
+    --breakpoint-sphone: 320px;
+    --breakpoint-phone: 375px;
+    --breakpoint-tablet: 768px;
+    --breakpoint-laptop: 1024px;
+    --breakpoint-desktop: 1440px;
+    --breakpoint-wide: 1920px;
+
+    /* ── Content width caps ── */
+    --container-prose: var(--layout-content-prose);
+    --container-form: var(--layout-content-form);
+    --container-card: var(--layout-content-card);
+    --container-narrow: var(--layout-content-narrow);
+    --container-medium: var(--layout-content-medium);
+    --container-wide: var(--layout-content-wide);
+
+    /* ── Stacking layers ── */
+    --z-index-ground: var(--z-ground);
+    --z-index-raised: var(--z-raised);
+    --z-index-dropdown: var(--z-dropdown);
+    --z-index-sticky: var(--z-sticky);
+    --z-index-overlay: var(--z-overlay);
+    --z-index-modal: var(--z-modal);
+    --z-index-popover: var(--z-popover);
+    --z-index-toast: var(--z-toast);
+    --z-index-spotlight: var(--z-spotlight);
+    --z-index-system: var(--z-system);
+
+    /* ── Elevation ── */
+    --shadow-resting: var(--elevation-resting);
+    --shadow-lifted: var(--elevation-lifted);
+    --shadow-floating: var(--elevation-floating);
+    --shadow-overhead: var(--elevation-overhead);
+    --shadow-modal: var(--elevation-modal);
+    --shadow-sticky: var(--elevation-sticky);
 }

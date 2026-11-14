@@ -14,21 +14,24 @@
  * ─────────────────────────────────────────────────────────────────────────────
  */
 :root {
-    /* ── Full ── solid success green, checkmarks, confirmed states */
-    --color-green:         hsl(92 100% 42.5%);
+    /* ── Full ── solid green (#14A800): primary CTA, keywords, highlighted data */
+    --color-green:         #14A800;
 
-    /* ── Faint (10%) ── success notification background */
-    --color-green-faint:   hsl(92 100% 42.5% / 0.1);
+    /* ── Green wash ── tags, badges, icon tiles (#EAF6E8) */
+    --color-green-wash:    #EAF6E8;
 
-    /* ── Subtle (15%) ── hover tint on success-themed surfaces */
-    --color-green-subtle:  hsl(92 100% 42.5% / 0.15);
+    /* ── Faint (10%) ── subtle green background wash */
+    --color-green-faint:   rgba(20, 168, 0, 0.10);
 
-    /* ── Muted (25%) ── pending / in-progress state badge */
-    --color-green-muted:   hsl(92 100% 42.5% / 0.25);
+    /* ── Subtle (15%) ── hover tint on green-themed surfaces */
+    --color-green-subtle:  rgba(20, 168, 0, 0.15);
 
-    /* ── Strong (50%) ── semi-opaque upload / progress fill */
-    --color-green-strong:  hsl(92 100% 42.5% / 0.5);
+    /* ── Muted (25%) ── badge / progress background */
+    --color-green-muted:   rgba(20, 168, 0, 0.25);
 
-    /* ── Intense (75%) ── success border, icon fill */
-    --color-green-intense: hsl(92 100% 42.5% / 0.75);
+    /* ── Strong (50%) ── semi-opaque progress fill */
+    --color-green-strong:  rgba(20, 168, 0, 0.50);
+
+    /* ── Intense (75%) ── border, icon fill */
+    --color-green-intense: rgba(20, 168, 0, 0.75);
 }

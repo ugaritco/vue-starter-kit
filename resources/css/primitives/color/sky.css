@@ -15,20 +15,20 @@
  */
 :root {
     /* ── Full ── soft sky blue, secondary links and cool accents */
-    --color-sky:         hsl(200 100% 70%);
+    --color-sky:         hsl(203.1 100% 50%);
 
     /* ── Faint (10%) ── airy background wash, cloud-like surface */
-    --color-sky-faint:   hsl(200 100% 70% / 0.1);
+    --color-sky-faint:   hsl(203.1 100% 50% / 0.10);
 
     /* ── Subtle (15%) ── cool hover tint on light surfaces */
-    --color-sky-subtle:  hsl(200 100% 70% / 0.15);
+    --color-sky-subtle:  hsl(203.1 100% 50% / 0.15);
 
     /* ── Muted (25%) ── secondary info chip, read-only tag */
-    --color-sky-muted:   hsl(200 100% 70% / 0.25);
+    --color-sky-muted:   hsl(203.1 100% 50% / 0.25);
 
     /* ── Strong (50%) ── semi-opaque sky overlay */
-    --color-sky-strong:  hsl(200 100% 70% / 0.5);
+    --color-sky-strong:  hsl(203.1 100% 50% / 0.50);
 
     /* ── Intense (75%) ── soft info border, icon fill */
-    --color-sky-intense: hsl(200 100% 70% / 0.75);
+    --color-sky-intense: hsl(203.1 100% 50% / 0.75);
 }

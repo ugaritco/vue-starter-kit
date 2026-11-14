@@ -16,20 +16,20 @@
  */
 :root {
     /* ── Full ── solid brand orange, primary CTA and focus indicator */
-    --color-orange:         hsl(27.73 100% 53.3%);
+    --color-orange:         hsl(21 90% 48%);
 
     /* ── Faint (10%) ── brand background wash, tag fill */
-    --color-orange-faint:   hsl(27.73 100% 53.3% / 0.1);
+    --color-orange-faint:   hsl(21 90% 48% / 0.10);
 
     /* ── Subtle (15%) ── hover tint on orange-accented surfaces */
-    --color-orange-subtle:  hsl(27.73 100% 53.3% / 0.15);
+    --color-orange-subtle:  hsl(21 90% 48% / 0.15);
 
     /* ── Muted (25%) ── soft brand chip, unread indicator */
-    --color-orange-muted:   hsl(27.73 100% 53.3% / 0.25);
+    --color-orange-muted:   hsl(21 90% 48% / 0.25);
 
     /* ── Strong (50%) ── semi-opaque brand or progress fill */
-    --color-orange-strong:  hsl(27.73 100% 53.3% / 0.5);
+    --color-orange-strong:  hsl(21 90% 48% / 0.50);
 
     /* ── Intense (75%) ── brand border, activity icon */
-    --color-orange-intense: hsl(27.73 100% 53.3% / 0.75);
+    --color-orange-intense: hsl(21 90% 48% / 0.75);
 }

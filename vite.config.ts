@@ -3,7 +3,6 @@ import { wayfinder } from '@ugarit/vite-plugin-wayfinder';
 import tailwindcss from '@tailwindcss/vite';
 import vue from '@vitejs/plugin-vue';
 import ugarit from 'ugarit-vite-plugin';
-import { bunny } from 'ugarit-vite-plugin/fonts';
 import { defineConfig, lazyPlugins } from 'vite-plus';
 
 export default defineConfig({
@@ -11,11 +10,6 @@ export default defineConfig({
         ugarit({
             input: ['resources/css/app.css', 'resources/js/app.ts'],
             refresh: true,
-            fonts: [
-                bunny('Cairo', {
-                    weights: [400, 500, 600, 700],
-                }),
-            ],
         }),
         inertia(),
         tailwindcss(),

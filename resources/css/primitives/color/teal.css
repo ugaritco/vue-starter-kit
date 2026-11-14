@@ -1,0 +1,25 @@
+/* Color primitive: teal
+ * ─────────────────────────────────────────────────────────────────────────────
+ * Ugarit Design System Color Primitive
+ * Base: hsl(174.7 83.9% 31.6%)
+ * ─────────────────────────────────────────────────────────────────────────────
+ */
+:root {
+    /* ── Full ── solid teal */
+    --color-teal:         hsl(174.7 83.9% 31.6%);
+
+    /* ── Faint (10%) ── background wash, light tag */
+    --color-teal-faint:   hsl(174.7 83.9% 31.6% / 0.10);
+
+    /* ── Subtle (15%) ── hover tint on teal surfaces */
+    --color-teal-subtle:  hsl(174.7 83.9% 31.6% / 0.15);
+
+    /* ── Muted (25%) ── soft chip, badge */
+    --color-teal-muted:   hsl(174.7 83.9% 31.6% / 0.25);
+
+    /* ── Strong (50%) ── semi-opaque overlay or progress */
+    --color-teal-strong:  hsl(174.7 83.9% 31.6% / 0.50);
+
+    /* ── Intense (75%) ── border, activity icon */
+    --color-teal-intense: hsl(174.7 83.9% 31.6% / 0.75);
+}

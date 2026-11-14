@@ -16,21 +16,27 @@
  * ─────────────────────────────────────────────────────────────────────────────
  */
 :root {
-    /* ── Full ── near-white surface gray, page backgrounds, input fields */
-    --color-gray:         hsl(0 0% 97.6%);
+    /* ── Graphite ── #333333: body text, general paragraphs */
+    --color-graphite:     #333333;
+
+    /* ── Mist ── #F5F5F5: canvas background */
+    --color-mist:         #F5F5F5;
+
+    /* ── Full ── neutral mist surface gray */
+    --color-gray:         #F5F5F5;
 
     /* ── Faint (10%) ── whisper-light wash overlay */
-    --color-gray-faint:   hsl(0 0% 97.6% / 0.1);
+    --color-gray-faint:   rgba(51, 51, 51, 0.05);
 
     /* ── Subtle (15%) ── hairline tint on white surfaces */
-    --color-gray-subtle:  hsl(0 0% 97.6% / 0.15);
+    --color-gray-subtle:  rgba(51, 51, 51, 0.10);
 
     /* ── Muted (25%) ── skeleton loading background */
-    --color-gray-muted:   hsl(0 0% 97.6% / 0.25);
+    --color-gray-muted:   rgba(51, 51, 51, 0.25);
 
     /* ── Strong (50%) ── disabled surface fill */
-    --color-gray-strong:  hsl(0 0% 97.6% / 0.5);
+    --color-gray-strong:  rgba(51, 51, 51, 0.50);
 
     /* ── Intense (75%) ── divider, secondary panel surface */
-    --color-gray-intense: hsl(0 0% 97.6% / 0.75);
+    --color-gray-intense: rgba(51, 51, 51, 0.75);
 }

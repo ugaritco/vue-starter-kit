@@ -26,187 +26,187 @@
  */
 :root {
 
-    /* ══════════════════════════════════════════════
+   /* ══════════════════════════════════════════════
        §1  CANVAS — page-level background / text
        ══════════════════════════════════════════════ */
 
-    /* ── Background ── the page canvas color (white) */
-    --background:              var(--color-paper);
+   /* ── Background ── the page canvas color (White #FFFFFF) */
+   --background: #FFFFFF;
 
-    /* ── Foreground ── the primary text color on background */
-    --foreground:              var(--color-ink);
+   /* ── Foreground ── the primary text color on background (Ink #16211C) */
+   --foreground: #16211C;
 
 
-    /* ══════════════════════════════════════════════
+   /* ══════════════════════════════════════════════
        §2  SURFACE — card and floating element fills
        ══════════════════════════════════════════════ */
 
-    /* ── Card ── default card / panel surface */
-    --card:                    var(--color-paper);
+   /* ── Card ── default card / panel surface (White #FFFFFF) */
+   --card: #FFFFFF;
 
-    /* ── Card foreground ── text on cards */
-    --card-foreground:         var(--color-ink);
+   /* ── Card foreground ── text on cards (Graphite #333333) */
+   --card-foreground: #333333;
 
-    /* ── Popover ── dropdown, tooltip, popover surface */
-    --popover:                 var(--color-paper);
+   /* ── Popover ── dropdown, tooltip, popover surface (White #FFFFFF) */
+   --popover: #FFFFFF;
 
-    /* ── Popover foreground ── text inside popovers */
-    --popover-foreground:      var(--color-ink);
+   /* ── Popover foreground ── text inside popovers (Ink #16211C) */
+   --popover-foreground: #16211C;
 
 
-    /* ══════════════════════════════════════════════
+   /* ══════════════════════════════════════════════
        §3  BRAND / PRIMARY — main action color
        ══════════════════════════════════════════════ */
 
-    /* ── Primary ── brand CTA fill (orange #FF7F11) */
-    --primary:                 var(--color-orange);
+   /* ── Primary ── brand CTA fill (Green #14A800) */
+   --primary: #14A800;
 
-    /* ── Primary foreground ── text on primary buttons */
-    --primary-foreground:      var(--color-paper);
+   /* ── Primary foreground ── text on primary buttons */
+   --primary-foreground: #FFFFFF;
 
-    /* ── Primary hover ── intensified orange on hover */
-    --primary-hover:           var(--color-orange-intense);
+   /* ── Primary hover ── darkened green on hover */
+   --primary-hover: #129300;
 
-    /* ── Primary pressed ── pressed / active state */
-    --primary-pressed:         var(--color-orange-strong);
+   /* ── Primary pressed ── pressed / active state */
+   --primary-pressed: #0E7700;
 
 
-    /* ══════════════════════════════════════════════
+   /* ══════════════════════════════════════════════
        §4  SECONDARY — secondary action color
        ══════════════════════════════════════════════ */
 
-    /* ── Secondary ── secondary button fill (soft black #212121) */
-    --secondary:               var(--color-ink);
+   /* ── Secondary ── secondary button fill (Ink #16211C) */
+   --secondary: #16211C;
 
-    /* ── Secondary foreground ── text on secondary buttons */
-    --secondary-foreground:    var(--color-paper);
+   /* ── Secondary foreground ── text on secondary buttons */
+   --secondary-foreground: #FFFFFF;
 
-    /* ── Secondary hover ── softened black on hover */
-    --secondary-hover:         var(--color-ink-intense);
+   /* ── Secondary hover ── softened ink on hover */
+   --secondary-hover: #23332C;
 
 
-    /* ══════════════════════════════════════════════
+   /* ══════════════════════════════════════════════
        §5  MUTED / GHOST — de-emphasized fills
        ══════════════════════════════════════════════ */
 
-    /* ── Muted ── ghost button fill, section background */
-    --muted:                   var(--color-gray);
+   /* ── Muted ── ghost button fill, section background (Mist #F5F5F5) */
+   --muted: #F5F5F5;
 
-    /* ── Muted foreground ── secondary / caption text color */
-    --muted-foreground:        var(--color-ink-strong);
+   /* ── Muted foreground ── secondary / caption text color (Graphite #333333) */
+   --muted-foreground: #333333;
 
 
-    /* ══════════════════════════════════════════════
+   /* ══════════════════════════════════════════════
        §6  ACCENT — complementary highlight
        ══════════════════════════════════════════════ */
 
-    /* ── Accent ── selected state, active badge background */
-    --accent:                  var(--color-lilac-strong);
+   /* ── Accent ── selected state, active badge background (Green wash #EAF6E8) */
+   --accent: #EAF6E8;
 
-    /* ── Accent foreground ── text on accent backgrounds */
-    --accent-foreground:       var(--color-ink);
+   /* ── Accent foreground ── text on accent backgrounds (Green #14A800) */
+   --accent-foreground: #14A800;
 
 
-    /* ══════════════════════════════════════════════
+   /* ══════════════════════════════════════════════
        §7  DESTRUCTIVE — error and danger
        ══════════════════════════════════════════════ */
 
-    /* ── Destructive ── delete / error button fill */
-    --destructive:             var(--color-red);
+   /* ── Destructive ── delete / error button fill */
+   --destructive: var(--color-red);
 
-    /* ── Destructive foreground ── text on destructive buttons */
-    --destructive-foreground:  var(--color-paper);
+   /* ── Destructive foreground ── text on destructive buttons */
+   --destructive-foreground: var(--color-paper);
 
-    /* ── Destructive hover ── deeper red on hover */
-    --destructive-hover:       var(--color-red-intense);
+   /* ── Destructive hover ── deeper red on hover */
+   --destructive-hover: var(--color-red-intense);
 
-    /* ── Destructive muted ── soft red for error backgrounds */
-    --destructive-muted:       var(--color-red-subtle);
+   /* ── Destructive muted ── soft red for error backgrounds */
+   --destructive-muted: var(--color-red-subtle);
 
 
-    /* ══════════════════════════════════════════════
+   /* ══════════════════════════════════════════════
        §8  STATUS — semantic feedback colors
        ══════════════════════════════════════════════ */
 
-    /* ─ Success ─ */
-    --success:                 var(--color-green);
-    --success-foreground:      var(--color-ink);
-    --success-muted:           var(--color-green-subtle);
+   /* ─ Success ─ */
+   --success: var(--color-green);
+   --success-foreground: var(--color-ink);
+   --success-muted: var(--color-green-subtle);
 
-    /* ─ Warning ─ */
-    --warning:                 var(--color-yellow);
-    --warning-foreground:      var(--color-ink);
-    --warning-muted:           var(--color-yellow-subtle);
+   /* ─ Warning ─ */
+   --warning: var(--color-yellow);
+   --warning-foreground: var(--color-ink);
+   --warning-muted: var(--color-yellow-subtle);
 
-    /* ─ Info ─ */
-    --info:                    var(--color-blue);
-    --info-foreground:         var(--color-ink);
-    --info-muted:              var(--color-blue-subtle);
+   /* ─ Info ─ */
+   --info: var(--color-blue);
+   --info-foreground: var(--color-ink);
+   --info-muted: var(--color-blue-subtle);
 
-    /* ─ Disabled ─ */
-    --disabled:                var(--color-ink-faint);
-    --disabled-foreground:     var(--color-ink-muted);
+   /* ─ Disabled ─ */
+   --disabled: var(--color-ink-faint);
+   --disabled-foreground: var(--color-ink-muted);
 
 
-    /* ══════════════════════════════════════════════
+   /* ══════════════════════════════════════════════
        §9  FORM CHROME — input borders and rings
        ══════════════════════════════════════════════ */
 
-    /* ── Border ── default form element and divider border */
-    --border:                  var(--color-ink-subtle);
+   /* ── Border ── default form element and divider border */
+   --border: rgba(22, 33, 28, 0.12);
 
-    /* ── Input ── input field border color */
-    --input:                   var(--color-ink-muted);
+   /* ── Input ── input field border color */
+   --input: rgba(22, 33, 28, 0.18);
 
-    /* ── Ring ── keyboard focus ring color */
-    --ring:                    var(--color-orange);
+   /* ── Ring ── keyboard focus ring color (Green #14A800) */
+   --ring: #14A800;
 
 
-    /* ══════════════════════════════════════════════
+   /* ══════════════════════════════════════════════
        §10 SIDEBAR — navigation sidebar surface
        ══════════════════════════════════════════════ */
 
-    /* ── Sidebar fill ── sidebar background surface */
-    --sidebar:                     var(--color-gray);
-    --sidebar-background:          var(--color-gray);
+   /* ── Sidebar fill ── sidebar background surface (White #FFFFFF) */
+   --sidebar: #FFFFFF;
+   --sidebar-background: #FFFFFF;
 
-    /* ── Sidebar text ── primary sidebar text */
-    --sidebar-foreground:          var(--color-ink);
+   /* ── Sidebar text ── primary sidebar text (Ink #16211C) */
+   --sidebar-foreground: #16211C;
 
-    /* ── Sidebar primary ── active nav item fill */
-    --sidebar-primary:             var(--color-orange);
-    --sidebar-primary-foreground:  var(--color-paper);
+   /* ── Sidebar primary ── active nav item fill (Green #14A800) */
+   --sidebar-primary: #14A800;
+   --sidebar-primary-foreground: #FFFFFF;
 
-    /* ── Sidebar accent ── hovered nav item background */
-    --sidebar-accent:              var(--color-lilac-strong);
-    --sidebar-accent-foreground:   var(--color-ink);
+   /* ── Sidebar accent ── hovered nav item background (Green wash #EAF6E8) */
+   --sidebar-accent: #EAF6E8;
+   --sidebar-accent-foreground: #14A800;
 
-    /* ── Sidebar border ── sidebar divider */
-    --sidebar-border:              var(--color-ink-subtle);
+   /* ── Sidebar border ── sidebar divider */
+   --sidebar-border: rgba(22, 33, 28, 0.08);
 
-    /* ── Sidebar ring ── focus ring within sidebar */
-    --sidebar-ring:                var(--color-orange);
+   /* ── Sidebar ring ── focus ring within sidebar */
+   --sidebar-ring: #14A800;
 
 
-    /* ══════════════════════════════════════════════
+   /* ══════════════════════════════════════════════
        §11 CHARTS — data visualization sequence
        ══════════════════════════════════════════════ */
 
-    /* ── Chart colors ── ordered palette for series data */
-    --chart-1:  var(--color-orange);
-    --chart-2:  var(--color-blue);
-    --chart-3:  var(--color-green);
-    --chart-4:  var(--color-yellow);
-    --chart-5:  var(--color-purple);
-    --chart-6:  var(--color-lilac);
-    --chart-7:  var(--color-red);
-    --chart-8:  var(--color-sky);
+   /* ── Chart colors ── ordered palette for series data */
+   --chart-1: #14A800;
+   --chart-2: #16211C;
+   --chart-3: #333333;
+   --chart-4: #25D366;
+   --chart-5: #0E7700;
+   --chart-6: var(--color-blue);
+   --chart-7: var(--color-yellow);
+   --chart-8: var(--color-sky);
 
 
-    /* ══════════════════════════════════════════════
+   /* ══════════════════════════════════════════════
        §12 SCRIM — modal and overlay backdrop
        ══════════════════════════════════════════════ */
 
-    /* ── Scrim ── modal backdrop (semi-opaque dark wash) */
-    --scrim:  var(--color-ink-strong);
+   /* ── Scrim ── modal backdrop (semi-opaque dark wash) */
+   --scrim: var(--color-ink-strong);
 }

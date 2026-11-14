@@ -16,20 +16,20 @@
  */
 :root {
     /* ── Full ── soft lavender lilac, decorative accent */
-    --color-lilac:         hsl(280 92.8% 83.7%);
+    --color-lilac:         hsl(280 100% 50%);
 
     /* ── Faint (10%) ── light decorative background wash */
-    --color-lilac-faint:   hsl(280 92.8% 83.7% / 0.1);
+    --color-lilac-faint:   hsl(280 100% 50% / 0.10);
 
     /* ── Subtle (15%) ── hover tint for lilac-tinted surfaces */
-    --color-lilac-subtle:  hsl(280 92.8% 83.7% / 0.15);
+    --color-lilac-subtle:  hsl(280 100% 50% / 0.15);
 
     /* ── Muted (25%) ── secondary badge fill */
-    --color-lilac-muted:   hsl(280 92.8% 83.7% / 0.25);
+    --color-lilac-muted:   hsl(280 100% 50% / 0.25);
 
     /* ── Strong (50%) ── semi-opaque accent layer */
-    --color-lilac-strong:  hsl(280 92.8% 83.7% / 0.5);
+    --color-lilac-strong:  hsl(280 100% 50% / 0.50);
 
     /* ── Intense (75%) ── near-solid decorative border or chip */
-    --color-lilac-intense: hsl(280 92.8% 83.7% / 0.75);
+    --color-lilac-intense: hsl(280 100% 50% / 0.75);
 }

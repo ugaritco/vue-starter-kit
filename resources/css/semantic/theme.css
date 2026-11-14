@@ -92,4 +92,16 @@
     --color-stroke-default: var(--stroke-default);
     --color-stroke-subtle: var(--stroke-subtle);
     --color-stroke-strong: var(--stroke-strong);
+
+    /* ── Ugarit Official Color Tokens ── */
+    --color-ugarit-green: #14A800;
+    --color-ugarit-ink: #16211C;
+    --color-ugarit-graphite: #333333;
+    --color-ugarit-mist: #F5F5F5;
+    --color-ugarit-white: #FFFFFF;
+    --color-ugarit-wash: #EAF6E8;
+    --color-green-wash: #EAF6E8;
+    --color-mist: #F5F5F5;
+    --color-ink: #16211C;
+    --color-graphite: #333333;
 }

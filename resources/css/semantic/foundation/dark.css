@@ -30,80 +30,80 @@
        ══════════════════════════════════════════════ */
 
     /* ── Background ── deep ink (near-black) as the page canvas */
-    --background:              var(--color-ink);
+    --background:              #0E1612;
 
-    /* ── Foreground ── white paper text on dark canvas */
-    --foreground:              var(--color-paper);
+    /* ── Foreground ── mist text on dark canvas */
+    --foreground:              #F5F5F5;
 
 
     /* ══════════════════════════════════════════════
        §2  SURFACE — dark card and floating surfaces
        ══════════════════════════════════════════════ */
 
-    /* ── Card ── slightly lighter than background (paper-faint glass) */
-    --card:                    var(--color-paper-faint);
+    /* ── Card ── dark ink card container */
+    --card:                    #16211C;
 
-    /* ── Card foreground ── white text on dark cards */
-    --card-foreground:         var(--color-paper);
+    /* ── Card foreground ── mist text on dark cards */
+    --card-foreground:         #F5F5F5;
 
-    /* ── Popover ── slightly more visible than card */
-    --popover:                 var(--color-paper-subtle);
+    /* ── Popover ── elevated dark surface */
+    --popover:                 #1C2B24;
 
-    /* ── Popover foreground ── white text in popovers */
-    --popover-foreground:      var(--color-paper);
+    /* ── Popover foreground ── mist text in popovers */
+    --popover-foreground:      #F5F5F5;
 
 
     /* ══════════════════════════════════════════════
-       §3  BRAND / PRIMARY — brand color (unchanged)
+       §3  BRAND / PRIMARY — brand color (Green #14A800)
        ══════════════════════════════════════════════ */
 
-    /* ── Primary ── orange unchanged — brand color is consistent across themes */
-    --primary:                 var(--color-orange);
+    /* ── Primary ── green CTA fill */
+    --primary:                 #14A800;
 
     /* ── Primary foreground ── white text on primary buttons */
-    --primary-foreground:      var(--color-paper);
+    --primary-foreground:      #FFFFFF;
 
-    /* ── Primary hover ── intense orange for hover */
-    --primary-hover:           var(--color-orange-intense);
+    /* ── Primary hover ── lighter green for hover on dark */
+    --primary-hover:           #17BF00;
 
-    /* ── Primary pressed ── medium orange for press feedback */
-    --primary-pressed:         var(--color-orange-strong);
+    /* ── Primary pressed ── solid green */
+    --primary-pressed:         #14A800;
 
 
     /* ══════════════════════════════════════════════
        §4  SECONDARY — inverted secondary action
        ══════════════════════════════════════════════ */
 
-    /* ── Secondary ── soft black (#212121), same brand secondary across themes */
-    --secondary:               var(--color-ink);
+    /* ── Secondary ── deep surface action */
+    --secondary:               #23332C;
 
-    /* ── Secondary foreground ── white text on black secondary buttons */
-    --secondary-foreground:    var(--color-paper);
+    /* ── Secondary foreground ── mist text on secondary buttons */
+    --secondary-foreground:    #F5F5F5;
 
-    /* ── Secondary hover ── softened black on hover */
-    --secondary-hover:         var(--color-ink-intense);
+    /* ── Secondary hover ── softened surface on hover */
+    --secondary-hover:         #2B3E36;
 
 
     /* ══════════════════════════════════════════════
        §5  MUTED / GHOST — de-emphasized fills on dark
        ══════════════════════════════════════════════ */
 
-    /* ── Muted ── very subtle white tint as ghost fill */
-    --muted:                   var(--color-paper-faint);
+    /* ── Muted ── dark surface tint as ghost fill */
+    --muted:                   #1C2B24;
 
-    /* ── Muted foreground ── secondary text on dark (strong white) */
-    --muted-foreground:        var(--color-paper-strong);
+    /* ── Muted foreground ── secondary text on dark */
+    --muted-foreground:        #A1B2A9;
 
 
     /* ══════════════════════════════════════════════
-       §6  ACCENT — softer accent on dark backgrounds
+       §6  ACCENT — subtle green accent on dark
        ══════════════════════════════════════════════ */
 
-    /* ── Accent ── muted lilac for selected states on dark */
-    --accent:                  var(--color-lilac-muted);
+    /* ── Accent ── soft green wash tint on dark */
+    --accent:                  rgba(20, 168, 0, 0.18);
 
-    /* ── Accent foreground ── white text on dark accent */
-    --accent-foreground:       var(--color-paper);
+    /* ── Accent foreground ── bright green text */
+    --accent-foreground:       #4ADE80;
 
 
     /* ══════════════════════════════════════════════
@@ -151,54 +151,54 @@
        §9  FORM CHROME — inputs and focus rings on dark
        ══════════════════════════════════════════════ */
 
-    /* ── Border ── subtle white border on dark surfaces */
-    --border:                  var(--color-paper-subtle);
+    /* ── Border ── subtle border on dark surfaces */
+    --border:                  rgba(234, 246, 232, 0.12);
 
-    /* ── Input ── visible white-tint input border */
-    --input:                   var(--color-paper-muted);
+    /* ── Input ── visible input border */
+    --input:                   rgba(234, 246, 232, 0.18);
 
-    /* ── Ring ── orange focus ring (unchanged) */
-    --ring:                    var(--color-orange);
+    /* ── Ring ── green focus ring (Green #14A800) */
+    --ring:                    #14A800;
 
 
     /* ══════════════════════════════════════════════
        §10 SIDEBAR — dark navigation sidebar
        ══════════════════════════════════════════════ */
 
-    /* ── Sidebar fill ── dark sidebar surface (paper-faint on ink) */
-    --sidebar:                     var(--color-paper-faint);
-    --sidebar-background:          var(--color-paper-faint);
+    /* ── Sidebar fill ── dark sidebar surface */
+    --sidebar:                     #111A15;
+    --sidebar-background:          #111A15;
 
-    /* ── Sidebar text ── white text in dark sidebar */
-    --sidebar-foreground:          var(--color-paper);
+    /* ── Sidebar text ── mist text in dark sidebar */
+    --sidebar-foreground:          #F5F5F5;
 
-    /* ── Sidebar primary ── active item (orange unchanged) */
-    --sidebar-primary:             var(--color-orange);
-    --sidebar-primary-foreground:  var(--color-paper);
+    /* ── Sidebar primary ── active item (Green #14A800) */
+    --sidebar-primary:             #14A800;
+    --sidebar-primary-foreground:  #FFFFFF;
 
     /* ── Sidebar accent ── hovered item on dark sidebar */
-    --sidebar-accent:              var(--color-lilac-muted);
-    --sidebar-accent-foreground:   var(--color-paper);
+    --sidebar-accent:              rgba(20, 168, 0, 0.18);
+    --sidebar-accent-foreground:   #4ADE80;
 
     /* ── Sidebar border ── subtle divider on dark sidebar */
-    --sidebar-border:              var(--color-paper-subtle);
+    --sidebar-border:              rgba(234, 246, 232, 0.10);
 
     /* ── Sidebar ring ── focus ring inside dark sidebar */
-    --sidebar-ring:                var(--color-orange);
+    --sidebar-ring:                #14A800;
 
 
     /* ══════════════════════════════════════════════
-       §11 CHARTS — data palette (unchanged across themes)
+       §11 CHARTS — data palette
        ══════════════════════════════════════════════ */
 
-    /* ── Chart colors ── same ordered palette works on dark backgrounds */
-    --chart-1:  var(--color-orange);
-    --chart-2:  var(--color-blue);
-    --chart-3:  var(--color-green);
-    --chart-4:  var(--color-yellow);
-    --chart-5:  var(--color-purple);
-    --chart-6:  var(--color-lilac);
-    --chart-7:  var(--color-red);
+    /* ── Chart colors ── green-led palette */
+    --chart-1:  #14A800;
+    --chart-2:  #4ADE80;
+    --chart-3:  #F5F5F5;
+    --chart-4:  #22C55E;
+    --chart-5:  #15803D;
+    --chart-6:  var(--color-blue);
+    --chart-7:  var(--color-yellow);
     --chart-8:  var(--color-sky);
 
 
